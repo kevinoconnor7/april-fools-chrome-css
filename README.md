@@ -14,7 +14,7 @@ curl https://raw.github.com/kevinoconnor7/april-fools-chrome-css/master/<script 
 That's it! I know.. the URL is a bit long and tedious to remember. Here's a shorter URL for them:
 
 ```
-curl http://para.ms/afools/<script name> | sh
+curl http://april.oconnor.mp/<script name> | sh
 ```
 
 ## How to undo
@@ -25,7 +25,7 @@ Run one of the following:
 curl https://raw.github.com/kevinoconnor7/april-fools-chrome-css/master/undo.sh | sh
 ```
 ```
-curl http://para.ms/afools/undo | sh
+curl http://april.oconnor.mp/undo | sh
 ```
 
 **Note:** This will wipe out any custom stylesheet they might have in place for the default user.

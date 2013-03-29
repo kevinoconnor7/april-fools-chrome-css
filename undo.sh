@@ -21,6 +21,4 @@ else
 fi
 
 #Do it!
-mkdir -p "$CUSTOM_CSS_PATH"
-touch "$CUSTOM_CSS_PATH/Custom.css"
 rm "$CUSTOM_CSS_PATH/Custom.css"

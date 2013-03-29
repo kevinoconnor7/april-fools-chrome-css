@@ -2,6 +2,8 @@
 
 Want to have a nice quick prank to pull? These are some simple scripts to write a Custom.css file into the default Chrome user's stylesheets directory. These scripts have been tested on both Ubuntu and Mac OSX.
 
+Original credit to [wesbos](https://github.com/wesbos/aprilFools.css) for the idea and CSS.
+
 ## Important Note
 
 You are running a shell script from Github. This is a huge security risk. I am not responsible if you accidently your whole computer. I *strongly* encourage you to view the scripts before running them

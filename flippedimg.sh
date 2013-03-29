@@ -1,4 +1,7 @@
 #!/bin/sh
+#
+# Flips all images on the page 180 degrees
+#
 
 # Setup environment
 

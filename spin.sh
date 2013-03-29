@@ -1,4 +1,7 @@
 #!/bin/sh
+#
+# Spin the page like crazy
+#
 
 # Setup environment
 

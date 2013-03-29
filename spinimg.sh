@@ -1,4 +1,7 @@
 #!/bin/sh
+#
+# Spin images on the page like crazy
+#
 
 # Setup environment
 

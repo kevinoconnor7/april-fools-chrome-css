@@ -1,4 +1,7 @@
 #!/bin/sh
+#
+# Adds a very slight blur to the page to make the victim think they need glasses
+#
 
 # Setup environment
 

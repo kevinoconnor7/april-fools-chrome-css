@@ -1,4 +1,8 @@
 #!/bin/sh
+#
+# Undo any custom CSS injected
+# NOTE: This will remove legitimate custom CSS the user might have
+#
 
 # Setup environment
 

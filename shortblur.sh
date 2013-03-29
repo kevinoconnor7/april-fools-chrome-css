@@ -1,4 +1,7 @@
 #!/bin/sh
+#
+# Adds a very quick, but intense, blur to the page
+#
 
 # Setup environment
 

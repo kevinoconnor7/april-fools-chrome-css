@@ -1,4 +1,7 @@
 #!/bin/sh
+#
+# Enables a rainbow on the page
+#
 
 # Setup environment
 

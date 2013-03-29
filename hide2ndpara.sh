@@ -1,4 +1,7 @@
 #!/bin/sh
+#
+# Hides every 2nd paragraph on the page
+#
 
 # Setup environment
 

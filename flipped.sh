@@ -1,4 +1,7 @@
 #!/bin/sh
+#
+# Flips the entire page 180 degrees
+#
 
 # Setup environment
 

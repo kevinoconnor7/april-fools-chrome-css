@@ -1,4 +1,7 @@
 #!/bin/sh
+#
+# Attempts to set all text on the page to Comic Sans
+#
 
 # Setup environment
 

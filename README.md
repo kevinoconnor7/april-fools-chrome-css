@@ -6,7 +6,7 @@ Original credit to [wesbos](https://github.com/wesbos/aprilFools.css) for the id
 
 ## Important Note
 
-You are running a shell script from Github. This is a huge security risk. I am not responsible if you accidently your whole computer. I *strongly* encourage you to view the scripts before running them
+You are running a shell script from Github. This is a huge security risk. I am not responsible if you accidently your whole computer. I *strongly* encourage you to view the scripts before running them.
 
 ## How to execute
 ```
@@ -16,7 +16,7 @@ curl https://raw.github.com/kevinoconnor7/april-fools-chrome-css/master/<script 
 That's it! I know.. the URL is a bit long and tedious to remember. Here's a shorter URL for them:
 
 ```
-curl http://april.oconnor.mp/<script name> | sh
+curl -L http://april.oconnor.mp/<script name> | sh
 ```
 
 ## How to undo
@@ -27,7 +27,18 @@ Run one of the following:
 curl https://raw.github.com/kevinoconnor7/april-fools-chrome-css/master/undo.sh | sh
 ```
 ```
-curl http://april.oconnor.mp/undo | sh
+curl -L http://april.oconnor.mp/undo | sh
+```
+
+### Still not undone?
+
+Force undo by running one of the following:
+
+```
+curl https://raw.github.com/kevinoconnor7/april-fools-chrome-css/master/forceUndo.sh | sh
+```
+```
+curl -L http://april.oconnor.mp/forceUndo | sh
 ```
 
 **Note:** This will wipe out any custom stylesheet they might have in place for the default user.

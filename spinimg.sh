@@ -19,7 +19,17 @@ else
 	exit 1
 fi
 
-#Do it!
+# Setup files
 mkdir -p "$CUSTOM_CSS_PATH"
 touch "$CUSTOM_CSS_PATH/Custom.css"
+
+# Undo the changes if we've done this before
+# else make a backup
+if [ -f "$CUSTOM_CSS_PATH/Custom.css.backup" ]; then
+	rm "$CUSTOM_CSS_PATH/Custom.css"
+else
+	cp "$CUSTOM_CSS_PATH/Custom.css" "$CUSTOM_CSS_PATH/Custom.css.backup"
+fi
+
+#Do it!
 echo 'img{-webkit-animation:spin 5s linear infinite}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg)}}' >> "$CUSTOM_CSS_PATH/Custom.css"

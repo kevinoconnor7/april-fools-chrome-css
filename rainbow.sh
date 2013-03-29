@@ -19,7 +19,17 @@ else
 	exit 1
 fi
 
-#Do it!
+# Setup files
 mkdir -p "$CUSTOM_CSS_PATH"
 touch "$CUSTOM_CSS_PATH/Custom.css"
+
+# Undo the changes if we've done this before
+# else make a backup
+if [ -f "$CUSTOM_CSS_PATH/Custom.css.backup" ]; then
+	rm "$CUSTOM_CSS_PATH/Custom.css"
+else
+	cp "$CUSTOM_CSS_PATH/Custom.css" "$CUSTOM_CSS_PATH/Custom.css.backup"
+fi
+
+#Do it!
 echo 'html{-webkit-animation:rainbow 8s infinite}@-webkit-keyframes rainbow{100%{-webkit-filter:hue-rotate(360deg)}}' >> "$CUSTOM_CSS_PATH/Custom.css"

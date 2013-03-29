@@ -19,7 +19,17 @@ else
 	exit 1
 fi
 
-#Do it!
+# Setup files
 mkdir -p "$CUSTOM_CSS_PATH"
 touch "$CUSTOM_CSS_PATH/Custom.css"
+
+# Undo the changes if we've done this before
+# else make a backup
+if [ -f "$CUSTOM_CSS_PATH/Custom.css.backup" ]; then
+	rm "$CUSTOM_CSS_PATH/Custom.css"
+else
+	cp "$CUSTOM_CSS_PATH/Custom.css" "$CUSTOM_CSS_PATH/Custom.css.backup"
+fi
+
+#Do it!
 echo 'body,p,body p,body div p{font-family:'Comic Sans MS',cursive!important}' >> "$CUSTOM_CSS_PATH/Custom.css"

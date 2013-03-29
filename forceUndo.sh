@@ -1,6 +1,7 @@
 #!/bin/sh
 #
-# Undo any custom CSS injected gracefully
+# Undo any custom CSS injected forcefully
+# NOTE: This will remove legitimate custom CSS the user might have
 #
 
 # Setup environment
@@ -21,8 +22,5 @@ fi
 
 #Cleanup if we've been here
 
-if [ -f "$CUSTOM_CSS_PATH/Custom.css.backup" ]; then
-	rm "$CUSTOM_CSS_PATH/Custom.css"
-	cp "$CUSTOM_CSS_PATH/Custom.css.backup" "$CUSTOM_CSS_PATH/Custom.css"
-	rm "$CUSTOM_CSS_PATH/Custom.css.backup"
-fi
+rm "$CUSTOM_CSS_PATH/Custom.css"
+rm "$CUSTOM_CSS_PATH/Custom.css.backup"
